@@ -37,11 +37,14 @@ body {
                          "content hero"
                          "email hero";
     grid-template-columns: 60% 40%;
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 25% 50% 25%;
 }
 
 .logo {
     grid-area: logo;
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
 }
 
 .hero {
@@ -54,8 +57,66 @@ body {
 
 .content {
     grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.part1 {
+    color: var(--desaturedRed);
+    font-size: 4.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+.part2 {
+    color: var(--darkGrayishRed);
+    font-size: 4.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 2.5%;
+}
+
+.part3 {
+    color: var(--desaturedRed);
+    width: 60%;
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+    margin-top: 5%;
 }
 
 .email {
     grid-area: email;
+    margin-left: 15%;
+    position: relative;
+}
+
+.email input {
+    height: 25%;
+    max-height: 54.69px;
+    width: 50%;
+    max-width: 380.72px;
+    border-radius: 20px / 20px;
+    padding: 3%;
+    color: var(--desaturedRed);
+}
+
+.email button {
+    height: 25%;
+    max-height: 54.69px;
+    width: 10%;
+    border-radius: 20px / 20px;
+    position: absolute;
+    left: 40%;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+::placeholder {
+    color: var(--desaturedRed);
+    font-family: var(--font, var(--fontFallback));
+    font-size: 1rem;
+    opacity: 0.5;
 }
