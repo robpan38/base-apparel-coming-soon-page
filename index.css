@@ -119,6 +119,11 @@ body {
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
+.email button:hover {
+    filter: drop-shadow(5px 5px 4px var(--desaturedRed));
+    cursor: pointer;
+}
+
 ::placeholder {
     color: var(--desaturedRed);
     font-family: var(--font, var(--fontFallback));
